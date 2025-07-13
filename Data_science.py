@@ -31,7 +31,7 @@ def get_latest_refresh_status(access_token):
                 "startTime": latest['startTime'],
                 "endTime": latest.get('endTime', 'In Progress')
             }
-        print(latest)
+       
     print("❌ Failed to fetch refresh status:", response.text)
     return None
 
